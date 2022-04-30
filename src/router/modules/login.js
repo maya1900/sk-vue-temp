@@ -1,4 +1,4 @@
-const Login = () => import('@/views/login.vue')
+const Login = () => import('@/views/login')
 export default {
   path: '/login',
   name: 'login',

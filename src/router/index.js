@@ -8,6 +8,10 @@ const routes = files.keys().map(key => {
   const page = require('./modules' + key.replace('.', ''));
   return page.default;
 })
+routes.unshift({
+  path: '/',
+  redirect: '/home'
+})
 console.log(routes);
 const router = new VueRouter({
   routes
