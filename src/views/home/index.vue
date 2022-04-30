@@ -5,6 +5,11 @@
     <br />
     <br />
     <button @click="post">POST请求</button>
+    <br />
+    <br />
+    返回结果：
+    <br />
+    {{ result }}
   </div>
 </template>
 
@@ -20,7 +25,9 @@ export default {
     },
   },
   data: function () {
-    return {};
+    return {
+      result: '',
+    };
   },
   computed: {},
   watch: {},
@@ -29,12 +36,12 @@ export default {
   methods: {
     get() {
       GET_DATA('/main/list').then((res) => {
-        alert('返回结果：' + res.data);
+        this.result = res.list;
       });
     },
     post() {
       POST_DATA('/main/create', { id: 3433 }).then((res) => {
-        alert('返回结果：' + res.data);
+        this.result = res;
       });
     },
   },

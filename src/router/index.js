@@ -12,7 +12,7 @@ routes.unshift({
   path: '/',
   redirect: '/home'
 })
-console.log(routes);
+
 const router = new VueRouter({
   routes
 })
