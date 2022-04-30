@@ -2,9 +2,11 @@
   "name": "sk-vue-temp",
   "version": "0.1.0",
   "private": true,
+  "author": "sixknow",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "start": "npm run serve"
   },
   "dependencies": {
     "core-js": "^3.8.3",
