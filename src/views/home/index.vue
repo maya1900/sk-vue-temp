@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import { GET_DATA, POST_DATA } from '@/services/request';
 export default {
   name: 'Home',
   components: {},
